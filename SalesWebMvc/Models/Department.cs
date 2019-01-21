@@ -12,9 +12,13 @@ namespace SalesWebMvc.Models
 
         public Department() { }
 
-        public Department(int id, string name)
+        public Department(int id, string name) : this(name)
         {
             Id = id;
+        }
+
+        public Department(string name)
+        {
             Name = name;
         }
 
